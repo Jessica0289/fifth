@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/button_sina"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="75dp"
+        android:drawableLeft="@drawable/account_sina"
+        android:text="新浪微博"
+        android:paddingRight="75dp"
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_button"
+        />
+
+    <Button
+        android:id="@+id/button_l"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_button"
+        android:drawableLeft="@drawable/ic_user"
+        android:text="用户名登陆"
+        android:textSize="20dp"
+        android:paddingLeft="68dp"
+        android:paddingRight="68dp"
+        android:layout_above="@+id/button_sina"
+        android:layout_alignLeft="@+id/button_sina"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button_tencent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="75dp"
+        android:paddingRight="75dp"
+        android:drawableLeft="@drawable/account_tencent"
+        android:text="腾讯微博"
+        android:textSize="20dp"
+        android:background="@drawable/shape_button"
+        android:layout_below="@+id/button_sina"
+        android:layout_alignLeft="@+id/button_sina"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/button_R"
+        android:layout_width="261dp"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/button_tencent"
+        android:layout_alignRight="@+id/button_tencent"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_logo"
+        android:layout_above="@id/button_l"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1E88E5"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="登陆"
+        />
+
+
+</RelativeLayout>

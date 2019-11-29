@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background1">
+
+    <Button
+        android:id="@+id/button_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        android:textSize="25dp"
+        android:textColor="#777575"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_button3"/>
+
+    <EditText
+        android:id="@+id/edit_password2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="密码"
+        android:maxLines="1"
+        android:maxLength="16"
+        android:textColorHint="#777575"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:layout_above="@id/button_log"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shape_button2"
+        />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="用户名"
+        android:maxLines="1"
+        android:textColorHint="#777575"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:layout_above="@id/edit_password2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/shape_button2"
+        />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:logo="@drawable/ic_back_register"
+        app:title="     用户名密码登陆"
+        />
+
+</RelativeLayout>
